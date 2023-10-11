@@ -114,9 +114,31 @@ main{
     
   color:RGB(213,83,52) ;
     transform: rotate(180deg);
-    left: -400px;
+    width: 100vw;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    @media (min-width: 40px){
+
+
+    }
+    @media (max-width: 300px){
+
+
+    }
+
+
+   
 }
 
+.box img{
+    position: absolute;
+    top: -502px;
+    width: 1200px;
+    left: -250px;
+}
 
 
