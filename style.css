@@ -1,3 +1,12 @@
+body{
+
+background-color: RGB(210,150,107);
+
+}
+
+
+
+
 header{
 
     color: brown;
@@ -41,28 +50,73 @@ header{
 }
 
 .Bilde1 img{
-    max-width: 100%;
+    max-width: 80px;
    height: auto;
-   width: 60px;
    border-radius: 50%;
    vertical-align: middle;
+   
+   
+   
+   
   
    
+   @media (max-width: 800px ) {
+    width: 40px;
+   
+}
+  
+   
+
   
    
   
 }
-.Bilde1{
-    
-    display: inline-block;
-    margin-right: 1px;
-    text-align: center;
-   
-   
+
+
+
   
-
-
  
+
+.Bilde1{
+    display: inline-block;
+    vertical-align:baseline;
+    margin: 4px;
+    text-align: center;
+
+    
+
+    
+    @media (max-width: 768px ) {
+    
+        min-width: 5px;
+      
+        
+    }
    
+  
+
+
 }
+
+main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin: 8px;
+    
+    
+
+}
+   
+.box{
+    
+  color:RGB(213,83,52) ;
+    transform: rotate(180deg);
+    left: -400px;
+
+}
+
+
 
