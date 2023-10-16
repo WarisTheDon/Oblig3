@@ -9,7 +9,7 @@ section figure img{
 
     
     display: flex;
-   justify-content;
+   justify-content: center;
 }
 
 
@@ -55,108 +55,41 @@ header{
         } 
 }
 
-
-
-
-.circle-list {
-    list-style-type: none;
-    padding: 0;
+.categories {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    background-size: 100px;
-}
-
-
-
-.circle1 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: RGB(213, 83, 52);
-    margin: 10px;
-   
-
-    
-}
-.circle2 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: RGB(213, 83, 52);
-    margin: 10px;
-   
-
-    
-}
-.circle3 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: RGB(213, 83, 52);
-    margin: 10px;
-   
-
-    
-}
-
-.circle4 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: RGB(213, 83, 52);
-    margin: 10px;
-   
-
-    
-}
-.circle5 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: RGB(213, 83, 52);
-    margin: 10px;
-   
-
-    
-}
-
-.circle1{
-
-
-    background-image: url(img/air-jordan-1-low-se-craft-mens-shoes-W9Kpp9.jpg);
-    background-size: cover;
-}
-
-
-.circle2{
-
-
-    background-image: url(img/50c57ebb-64bc-4e3e-844f-7e9c35c8a03d.webp);
-    background-size: cover;
-}
-.circle3{
-
-
-    background-image: url(img/c63fe38f-a4fb-4f68-975e-a74898d16317.webp);
-    background-size: cover;
-}
-.circle4{
-
-
-    background-image: url(img/e9310401-b83f-481e-91bf-8e263f2c3aca.webp);
-    background-size: cover;
-}
-.circle5{
-
-
-    background-image: url(img/jordan-jumpman-pro-mens-shoes-L3X3Sk.jpg);
+    margin-top: 20px; /* Juster som nødvendig */
   
-    background-size: cover;
 }
 
+.categories img {
+    width: 60px; /* Standard størrelse for bildene */
+    height: 55px;
+    border-radius: 50%; /* Gjør bildene til sirkler */
+    margin: -5px; /* Juster avstanden mellom bildene */
+    
+}
+
+/* Medieforespørsler for å endre størrelsen på bildene basert på skjermstørrelsen */
+@media (max-width: 768px) {
+    .categories img {
+        width: 50px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories img {
+        width: 40px;
+        height: 40px;
+       margin-left: 20%;
+    }
+}
+
+figure{
+
+margin: 5px;
 
 
-
-
+}
