@@ -42,7 +42,7 @@ header{
     
 
    
-  
+        
         opacity: 0.9;
         border: none;
         border-radius: 1px;
@@ -57,9 +57,12 @@ header{
 
 .categories {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 20px; /* Juster som nødvendig */
+    
+   
   
 }
 
@@ -67,8 +70,8 @@ header{
     width: 60px; /* Standard størrelse for bildene */
     height: 55px;
     border-radius: 50%; /* Gjør bildene til sirkler */
-    margin: -5px; /* Juster avstanden mellom bildene */
-    
+    margin: 0px; /* Juster avstanden mellom bildene */
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Medieforespørsler for å endre størrelsen på bildene basert på skjermstørrelsen */
@@ -76,6 +79,7 @@ header{
     .categories img {
         width: 50px;
         height: 45px;
+       
     }
 }
 
@@ -84,7 +88,7 @@ header{
         width: 40px;
         height: 40px;
        margin-left: 20%;
-       
+     
     }
 }
 
@@ -96,7 +100,7 @@ margin: 5px;
 }
 
 .box{
-    background-color: orange;
+    background-color: rgb(255, 81, 0);
     border-color: black;
     width: 100%;
     display: flex;
@@ -104,6 +108,7 @@ margin: 5px;
     align-items: center;
     padding: 0;
     margin: 0;
+    
 
 
 @media (max-width: 9998px) {
@@ -118,9 +123,10 @@ margin: 5px;
 .shoe-box{
     width: 30px;
     height: 10px;
-    display: inline-flex;
-    margin-right: 70px;
+   display: block;
+    margin-right: 90px;
     margin-top: 25px;
+  
    
    
 
@@ -131,11 +137,51 @@ margin: 5px;
     width: 80px;
     height: 80px;
     border-radius: 15%;
-    border: 5px solid black;
-    border-width: 1px;
-    padding: 4px;
-    padding-bottom: 28px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    
     margin-top: -200%;
-    margin-left: -44% ;
+    margin-left: -24% ;
 }
-   
+.shoe-box img:hover {
+    transform: scale(1.1); /* Endre størrelsen på hover */
+  }
+  .shoe-box img:not(:hover) {
+    transform: scale(1); /* Tilbakestill størrelsen når ikke hover */
+  }
+.box2{
+    background-color: rgb(255, 81, 0);
+    border-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+
+
+@media (max-width: 9998px) {
+        min-width: 400px;
+        height: 200px;
+        width:100vw;
+        margin-left: -7px;
+        margin-top: 5%;
+    }
+}
+
+.shoe-box2 img{
+
+    width: 170px;
+    height: 170px;
+    left: -70%;
+ 
+}
+
+.shoe-box2{
+
+      display:flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
